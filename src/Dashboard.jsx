@@ -1,19 +1,9 @@
 import React from "react";
 
-function Dashboard({ studentData }) {
+export function Dashboard() {
   return (
     <div>
-      <h2>Dashboard</h2>
-      {studentData ? (
-        <div>
-          <h3>Welcome, {studentData.firstName}!</h3>
-          {/* Display student data here */}
-        </div>
-      ) : (
-        <p>Loading...</p>
-      )}
+      <h1>Dashboard</h1>
     </div>
   );
 }
-
-export default Dashboard;
