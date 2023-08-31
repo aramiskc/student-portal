@@ -7,6 +7,7 @@ export function Login() {
   return (
     <div id="login">
       <form>
+        <h1>Login</h1>
         <div>
           Email: <input name="email" type="email" />
         </div>

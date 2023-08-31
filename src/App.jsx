@@ -1,10 +1,10 @@
-import { Dashboard } from "./Dashboard";
+// import { Dashboard } from "./Dashboard";
 import { Login } from "./Login";
 
 function App() {
   return (
     <div>
-      <Dashboard />
+      {/* <Dashboard /> */}
       <Login />
     </div>
   );
