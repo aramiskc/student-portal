@@ -1,8 +1,16 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { StudentProfilePage } from "./StudentProfilePage";
 
 export function Dashboard() {
-  const students = [{ id: 1, name: "First", url: "https://via.placeholder.com/150", width: 150, height: 150 }];
+  const [student, setStudent] = useState([]);
+
+  const handleShowStudent = (jwt) => {
+    console.log("HIIII!");
+    axios.get(`https://resume-data-api-7hzu.onrender.com/student/${jwt}.json`);
+  };
+
+  useEffect(handleShowStudent, []);
 
   return (
     <div>
